@@ -1,0 +1,31 @@
+{
+  "name": "blog_client",
+  "version": "1.0.0",
+  "description": "我的技术博客网站",
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "node ./test/test.js",
+    "dev": "node ./app.js"
+  },
+  "keywords": [
+    "技术"
+  ],
+  "author": "XieXing",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "*",
+    "koa-bodyparser": "*",
+    "koa-router": "*",
+    "nunjucks": "*",
+    "mime": "*",
+    "mz": "*",
+    "mongodb": "*",
+    "mysql": "*",
+    "node-uuid": "*",
+    "koa-session": "*",
+    "crypto": "*",
+    "mongoose": "*"
+  }
+}

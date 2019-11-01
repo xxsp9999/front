@@ -1,0 +1,13 @@
+{% extends "base.html" %} {% block main %}
+<link rel="stylesheet" href="../static/css/sign-ok.css">
+<script src="../static/js/signOk.js"></script>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>{{title}}</h1>
+            <div class="alert alert-info"><h2><label id="countDown">3</label>s后跳转首页</h2>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

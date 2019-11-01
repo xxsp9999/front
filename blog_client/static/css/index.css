@@ -1,0 +1,12 @@
+.panel-body{
+    height: 240px;
+    overflow: auto;
+}
+.panel-body li{
+    font-size: 15px;
+    list-style: square;
+}
+.panel-body li:hover{
+    cursor: default;
+    background: lightblue;
+}

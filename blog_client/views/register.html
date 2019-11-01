@@ -1,0 +1,79 @@
+{% extends "base.html" %} {% block main %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="glyphicon glyphicon-user"></span> 请注册</h3>
+                </div>
+                <div class="panel-body">
+                    <form action="/signup" method="post">
+                        <div class="form-group">
+                            <label>邮箱</label>
+                            <input type="email" name="email" class="form-control" placeholder="Email" id="userEmail" required>
+                            <p class="help-block" id="emailTips"></p>
+                        </div>
+                        <div class="form-group">
+                            <label>密码</label>
+                            <input type="password" name="password" class="form-control" placeholder="Password" id="userPassword" required>
+                            <p class="help-block" id="passwordTips"></p>
+                        </div>
+                        <button type="submit" class="btn btn-primary">注册</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="glyphicon glyphicon-hd-video"></span>最新资讯</h3>
+                </div>
+                <div class="panel-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h1>项目展示</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">JAVA</h3>
+                </div>
+                <div class="panel-body">
+                    <p>智能教育系统</p>
+                    <p><a target="_blank" href="https://github.com/xxsp9999/education">更多详情</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">JavaScript</h3>
+                </div>
+                <div class="panel-body">
+                    <p>JS高级用</p>
+                    <p><a target="_blank" href="https://github.com/xxsp9999/learn_js">更多详情</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">git主页</h3>
+                </div>
+                <div class="panel-body">
+                    <p>我的所有项目</p>
+                    <p><a target="_blank" href="https://github.com/xxsp9999">更多详情</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/js/register.js"></script>
+{% endblock %}

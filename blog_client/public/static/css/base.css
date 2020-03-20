@@ -1,0 +1,68 @@
+.login-btn {
+    margin-top: -2%;
+    margin-left: 90%;
+    font-size: 15px;
+}
+
+.login-success {
+    margin-top: -3%;
+    margin-left: 78%;
+    font-size: 15px;
+    text-align: center;
+}
+
+#important {
+    background: url("/static/image/banner/banner_2.jpg");
+    background-size: 100% 100%;
+    color: #cdbfe3;
+    /*background-color: blue;*/
+    padding: 30px 0;
+    margin: -20px 0 20px 0;
+    /*position: relative;*/
+    height: 250px;
+}
+
+.container-title {
+    color: #fff;
+    font-size: 60px
+}
+
+.container-content {
+    font-size: 24px;
+    line-height: 48px
+}
+
+.container-wechat {
+    width: 8%;
+}
+
+.iconfont {
+    color: blue;
+}
+
+#loginUserName {
+    width: 210px;
+    margin-left: -75%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#loginUserName:hover{
+    cursor: default;
+}
+.loginCss{
+    margin-left: 90%;
+    margin-top: 1.5%;
+}
+/*
+#bannerContainer{
+    width: 1141px;
+    height: 250px;
+    background: url("/static/image/banner/banner_1.png");
+    background-size: 100% 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}*/

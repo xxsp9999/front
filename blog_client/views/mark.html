@@ -1,0 +1,32 @@
+{% extends "themes/base.html" %} {% block main %}
+<link rel="stylesheet" href="/static/css/mark.css">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="iconfont icon-biaojiyi"></span>标记一<label style="color: red;">{{errorPrompt}}</label></h3>
+                </div>
+                <div class="panel-body">
+                    <canvas id="canvasOne">
+
+                    </canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="iconfont icon-biaojier"></span>标记二</h3>
+                </div>
+                <div class="panel-body">
+                    <canvas id="canvasTwo">
+
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/js/mark.js"></script>
+{% endblock %}

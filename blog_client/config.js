@@ -18,16 +18,20 @@ let config = {
     //session设置
     session: {
         key: 'koa:sess',
-        maxAge: 86400000,
+        maxAge: 1 * 60 * 60 * 1000,
         overwrite: true,
         httpOnly: true,
         signed: true,
         rolling: false,
         renew: false,
     },
-    secret:{
+    secret: {
         key: "123456789abcdefg" || "xxsp9999",//密钥
-        iv:"123456789abcdefg" //初始化向量
+        iv: "123456789abcdefg" //初始化向量
+    },
+    //标记设置
+    mark: {
+        sourceFile: "/xx_blog_data/mark/source",//源文件
     }
 
 };

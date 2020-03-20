@@ -2,7 +2,7 @@ const Koa = require('koa');
 
 const bodyParser = require('koa-bodyparser');
 
-const session= require("koa-session");
+const session = require("koa-session");
 
 const controller = require('./controller');
 
@@ -31,9 +31,9 @@ app.use(async (ctx, next) => {
 });
 
 // 给于用户static文件夹的访问权限
-if (! isProduction) {
+if (!isProduction) {
     let staticFiles = require('./static-files');
-    app.use(staticFiles('/static/', __dirname + '/static'));
+    app.use(staticFiles('/static/', __dirname + '/public/static'));
 }
 
 // parse request body:
@@ -49,6 +49,7 @@ app.use(templating('views', {
 app.use(controller());
 
 
+app.listen(3000);//注册端口3000
+console.log('app started at port 3000...');
 
-app.listen(8088);//注册端口8088
-console.log('app started at port 8088...');
+

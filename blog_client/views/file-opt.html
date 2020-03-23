@@ -1,0 +1,9 @@
+{% extends "themes/base.html" %} {% block main %}
+<link rel="stylesheet" href="/static/css/file-opt.css">
+<div class="upload-container">
+    <form enctype="multipart/form-data" method="post" action="/uploads">
+        <input type="file" name="file" multiple>
+        <button>上传</button>
+    </form>
+</div>
+{% endblock %}

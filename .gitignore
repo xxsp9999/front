@@ -12,6 +12,7 @@ target
 /blog_client/node_modules/*
 /blog_client/.idea/*
 /blog_client/package-lock.json
+/blog_client/public/project/upload/*
 
 /blog_server/node_modules/*
 /blog_server/.idea/*

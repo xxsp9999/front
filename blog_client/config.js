@@ -1,15 +1,27 @@
 let config = {
   //mongo数据库信息
   mongdb: {
-    // url: 'mongodb://blog:blog^&5583@180.76.104.38:27017/blog',//带用户名密码
-    url: 'mongodb://localhost:27017/blog',
+    url: 'mongodb://blog:blog^&5583@180.76.104.38:27017/blog',//带用户名密码
+    // url: 'mongodb://localhost:27017/blog',
     poolsize: 20
   },
   //mysql数据库信息
-  mysql: {
+  //本地
+  /*mysql: {
     host: '127.0.0.1',
     user: 'root',
     password: 'root',
+    port: '3306',
+    database: 'blog',
+    acquireTimeout: 2000,
+    connectionLimit: 100
+  },*/
+
+  //服务器
+  mysql: {
+    host: '127.0.0.1',
+    user: 'blog',
+    password: 'blog^&5583',
     port: '3306',
     database: 'blog',
     acquireTimeout: 2000,
